@@ -1,0 +1,30 @@
+.titulo
+{
+    font-family: 'Satisfy', cursive;
+    margin-top: 1%;
+}
+.carrito
+{
+ width: 5px; 
+}
+.items
+{
+    margin-top: 2%;
+}
+.central
+{
+    width: 100%;
+}
+.navbar
+{
+    background-color:#474b4e ;
+    
+}
+.burger-txt
+{
+    text-align: center;
+}
+.card-img-top
+{
+    width: 50px;
+}
