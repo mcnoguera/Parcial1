@@ -24,11 +24,18 @@
 {
     text-align: center;
 }
-.card-img-top
+.card-img-top-mc
 {
-    width: 50px;
+   width: 100% !important;
+   height: 150px;
+   object-fit: cover;
 }
 .card-size
 {
-    width: 18rem;
+    width: 99%;
 }
+.p-container
+{
+ height: 185px;
+}
+

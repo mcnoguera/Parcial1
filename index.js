@@ -53,20 +53,24 @@ async function showCategorie(param) {
   container_list.appendChild(container_row);
   productsList.map((product) => {
     container_col = document.createElement('div');
-    container_col.classList.add("col-4");
+    container_col.classList.add("col-3");
+    container_col.classList.add("p-2");
     div = document.createElement('div')
     div.classList.add("card");
-    div.classList.add("m-5");
-    //div.classList.add("card-size");
+    div.classList.add("card-size");
     img = document.createElement('img')
-    div.classList.add("card-img-top");
+    img.classList.add("card-img-top");
+    img.classList.add("card-img-top-mc");
     img.src = product.image;
     container_body = document.createElement('div');
     container_body.classList.add("card-body");
     h5 = document.createElement('h5');
     h5.classList.add("card-title");
     h5.innerHTML = product.name;
+    p_container = document.createElement('div');
+    p_container.classList.add("p-container");
     p = document.createElement('p');
+    p_container.appendChild(p);
     p.classList.add("card-text");
     p.innerHTML = product.description;
     price = document.createElement('h5');
@@ -77,7 +81,7 @@ async function showCategorie(param) {
     a.innerHTML = "Add to car";
     console.log(product)
     container_body.appendChild(h5);
-    container_body.appendChild(p);
+    container_body.appendChild(p_container);
     container_body.appendChild(price);
     container_body.appendChild(a);
     div.appendChild(img);
@@ -86,7 +90,6 @@ async function showCategorie(param) {
     container_row.appendChild(container_col);
   })
   document.getElementById('productos').appendChild(h2)
-  document.getElementById('productos').appendChild(div)
   document.getElementById('productos').appendChild(container_list)
 }
 
